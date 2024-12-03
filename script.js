@@ -18,19 +18,19 @@ function calculatePendulum() {
     const initialOmegaDeg = parseFloat(document.getElementById('initialOmegaInput').value);
 
     if (isNaN(length) || length <= 0) {
-        alert('Please enter a valid length (greater than 0)');
+        alert('請輸入有效的擺長 (大於 0)');
         return;
     }
     if (isNaN(timeStep) || timeStep <= 0) {
-        alert('Please enter a valid time step (greater than 0)');
+        alert('請輸入有效的步長 (大於 0)');
         return;
     }
     if (isNaN(angle) || angle < -90 || angle > 90) {
-        alert('Please enter a valid initial angle (range: -90° to 90°)');
+        alert('請輸入有效的初始擺角 (範圍：-90° 到 90°)');
         return;
     }
     if (isNaN(initialOmegaDeg)) {
-        alert('Please enter a valid initial angular velocity');
+        alert('請輸入有效的初始角速度');
         return;
     }
 
@@ -134,3 +134,5 @@ function calculatePendulum() {
         },
     });
 }
+
+document.querySelector("button").addEventListener("click", calculatePendulum);
