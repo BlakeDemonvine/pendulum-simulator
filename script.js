@@ -29,13 +29,13 @@ function calculatePendulum() {
         return;
     }
 
-    const g = 9.80665;  // 重力加速度
+    const g = 9.80665;
     const period = 2 * Math.PI * Math.sqrt(length / g);
-    const totalTime = 10 * period; // 模擬 10 個完整周期
+    const totalTime = 10 * period;
     const numSteps = Math.floor(totalTime / timeStep);
 
-    let angleRadians = angle * Math.PI / 180;  // 角度轉弧度
-    let omega = 0;  // 初始角速度
+    let angleRadians = angle * Math.PI / 180;
+    let omega = 0;
     let displacementHistory = [];
     let timeHistory = [];
     let phaseSpace = [];
@@ -63,10 +63,10 @@ function calculatePendulum() {
 
         const { newAngle, newOmega } = rk4(angleRadians, omega, timeStep);
 
-        displacementHistory.push(newAngle * 180 / Math.PI);  // 轉回角度
+        displacementHistory.push(newAngle * 180 / Math.PI);
         timeHistory.push(step * timeStep);
         phaseSpace.push({
-            x: newAngle * 180 / Math.PI,  // 轉回角度
+            x: newAngle * 180 / Math.PI,
             y: newOmega,
         });
 
