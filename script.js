@@ -102,7 +102,7 @@ function calculatePendulum() {
             responsive: true,
             scales: {
                 x: {
-                    title: { display: true, text: '時間 (秒)' },
+                    title: { display: true, text: '時間 (sec)' },
                 },
                 y: {
                     title: { display: true, text: '角度 (°)' },
@@ -128,7 +128,7 @@ function calculatePendulum() {
                     title: { display: true, text: '角度 (°)' },
                 },
                 y: {
-                    title: { display: true, text: '角速度 (°/秒)' },
+                    title: { display: true, text: '角速度 (°/sec)' },
                 },
             },
         },
