@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pendulum Simulation</title>
+    <title>大角度單擺模擬</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="container">
-        <h2>Pendulum Simulation</h2>
-        <label for="lengthInput">Length L (m):</label>
-        <input type="number" id="lengthInput" placeholder="Length (meters)" step="0.01">
-        <label for="timeStepInput">Time Step h (sec):</label>
-        <input type="number" id="timeStepInput" placeholder="Time Step (sec)" step="0.01">
-        <label for="angleInput">Initial Angle θ (°):</label>
-        <input type="number" id="angleInput" placeholder="Initial Angle (°)" step="0.1">
-        <label for="initialOmegaInput">Initial Angular Velocity ω₀ (°/sec):</label>
-        <input type="number" id="initialOmegaInput" placeholder="Initial Angular Velocity (°/sec)" step="0.01">
-        <button onclick="calculatePendulum()">Calculate Pendulum Motion</button>
-        <h3>Results:</h3>
-        <p id="result">Results will be displayed here.</p>
+        <h2>大角度單擺模擬</h2>
+        <label for="lengthInput">擺長 L (m):</label>
+        <input type="number" id="lengthInput" placeholder="擺長 (米)" step="0.01">
+        <label for="timeStepInput">步長 h (sec):</label>
+        <input type="number" id="timeStepInput" placeholder="步長 (sec)" step="0.01">
+        <label for="angleInput">初始擺角 θ (°):</label>
+        <input type="number" id="angleInput" placeholder="初始擺角 (°)" step="0.1">
+        <label for="initialOmegaInput">初始角速度 ω₀ (°/sec):</label>
+        <input type="number" id="initialOmegaInput" placeholder="初始角速度 (°/sec)" step="0.01">
+        <button>計算擺錘運動</button>
+        <h3>結果:</h3>
+        <p id="result">計算結果將顯示在此處。</p>
         <canvas id="pendulumChart"></canvas>
         <canvas id="phaseChart"></canvas>
     </div>
