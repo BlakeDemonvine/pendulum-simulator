@@ -49,3 +49,12 @@ label {
 h2, h3 {
   color: #333;
 }
+
+.subtitle {
+  font-size: 14px;
+  color: gray;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
