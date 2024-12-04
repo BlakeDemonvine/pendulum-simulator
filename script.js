@@ -35,8 +35,7 @@ function calculatePendulum() {
     }
 
     const g = 9.80665;
-    const period = 2 * Math.PI * Math.sqrt(length / g);
-    const totalTime = 10 * period;
+    const totalTime = 10;
     const numSteps = Math.floor(totalTime / timeStep);
 
     let angleRadians = angle * Math.PI / 180;
