@@ -25,7 +25,7 @@ function calculatePendulum() {
         alert('請輸入有效的步長 (大於 0)');
         return;
     }
-    if (isNaN(angle) || angle < -90 || angle > 90) {
+    if (isNaN(angle) || angle < -720 || angle > 720) {
         alert('請輸入有效的初始擺角 (範圍：-90° 到 90°)');
         return;
     }
